@@ -1,0 +1,48 @@
+*{
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    padding: 1%;
+    margin: 0.5% auto;
+    height: 10%;
+}
+h1,
+p{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    padding: 1%;
+    font-size: 110%;
+    box-shadow: 5px 5px 5px black;
+}
+button:hover{
+    background-color: gray;
+}
+button:active{
+    transform: scale(0.95);
+    background-color: lightgray;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid black;
+    border-width: 90%;
+    padding: 1%;
+    margin: 2% auto 0.5% auto;
+}
+
