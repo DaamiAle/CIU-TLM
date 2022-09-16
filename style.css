@@ -5,15 +5,9 @@
     box-sizing: border-box;
     font-family: 'Verdana', sans-serif;   
 }
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
 header{
     padding: 1%;
     margin: 0.5% auto;
-    height: 10%;
 }
 h1,
 p{
@@ -23,17 +17,19 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
-button{
+.button{
     padding: 1%;
     font-size: 110%;
     box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 40%;
 }
-button:hover{
+.button:hover{
     background-color: gray;
 }
-button:active{
+.button:active{
     transform: scale(0.95);
     background-color: lightgray;
 }
@@ -41,7 +37,6 @@ footer{
     text-align: center;
     width: 100%;
     border-top: 1px solid black;
-    border-width: 90%;
     padding: 1%;
     margin: 2% auto 0.5% auto;
 }
