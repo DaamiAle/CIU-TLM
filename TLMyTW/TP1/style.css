@@ -63,6 +63,6 @@ footer{
     width: 25em;
     height: 15em;
 }
-aside{
+.aside{
     min-width: 10em;
 }
