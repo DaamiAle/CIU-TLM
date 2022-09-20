@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Parcial - Formulario</title>
+    <style>*{font-family: Verdana;}</style>
+</head>
+<body>
+    <header>
+        <h2>Vota Tu Favorito</h2>
+    </header>
+    <main>
+        <p>Elige tu favorito de nuestras sugerencias para que continue disponible.</p>
+        <p>El mas votado se queda una semana mas. Los otros se cambian por nuevas sugerencias.</p>
+        <p>Ingresa algunos datos y recibe novedades por email.</p>
+        <form action="index.html">
+            <fieldset>
+                <legend>Formulario</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label>Edad:</label>
+                <input type="radio" name="edad" required>  5 - 17 años.
+                <input type="radio" name="edad" required> 18 - 30 años.
+                <input type="radio" name="edad" required> 31 - 50 años.
+                <input type="radio" name="edad" required> 51 - 90 años.<br><br>
+                <label>Género:</label>
+                <input type="radio" name="sexo" required> Masculino
+                <input type="radio" name="sexo" required> Femenino
+                <input type="radio" name="sexo" required> No Binario<br><br>
+                <label>¿Deseas recibir novedades por email?</label>
+                <input type="radio" name="novedades" required> Sí
+                <input type="radio" name="novedades" required> No<br><br>
+                <label>Pelicula que mas te gusto:</label>
+                <input type="checkbox" id="pelicula1" name="peli-fav"><label for="pelicula1">Pelicula 1</label>
+                <input type="checkbox" id="pelicula2" name="peli-fav"><label for="pelicula2">Película 2</label>
+                <input type="checkbox" id="pelicula3" name="peli-fav"><label for="pelicula3">Película 3</label><br><br>
+                <label>Serie que mas te gusto:</label>
+                <input type="checkbox" id="serie1" name="serie-fav"><label for="serie1">Serie 1</label>
+                <input type="checkbox" id="serie2" name="serie-fav"><label for="serie2">Serie 2</label>
+                <input type="checkbox" id="serie3" name="serie-fav"><label for="serie3">Serie 3</label><br><br>
+                <label>¿Que otras tematicas te gustaria ver incorporadas en nuestra pagina?</label><br>
+                <input type="checkbox" id="tematica1" name="tematica"><label for="tematica1">Noticias</label>
+                <input type="checkbox" id="tematica2" name="tematica"><label for="tematica2">Musica</label>
+                <input type="checkbox" id="tematica3" name="tematica"><label for="tematica3">Libros</label>
+                <input type="checkbox" id="tematica4" name="tematica"><label for="tematica4">Videojuegos</label><br><br>
+                <label for="genero">¿Que genero te gustaria que se incorpore para la proxima ronda?</label>
+                <input type="text" id="genero" name="genero" list="generos">
+                <datalist id="generos">
+                    <option value="Drama">
+                    <option value="Aventura">
+                    <option value="Terror">
+                    <option value="Comedia">
+                    <option value="Ciencia Ficción">
+                    <option value="Romance">
+                    <option value="Musical">
+                    <option value="Documental">
+                    <option value="Infantil">
+                    <option value="Acción">
+                    <option value="Fantasía">
+                    <option value="Crimen">
+                    <option value="Misterio">
+                    <option value="Familia">
+                    <option value="Guerra">
+                    <option value="Historia">
+                </datalist><br><br>
+                <label for="comentario">Comentarios:</label><br>
+                <textarea rows="5" cols="50" type="textarea" id="comentario" name="comentario" placeholder="Podes sugerir tambien distintos titulos de series o películas."></textarea><br><br>
+                <input type="submit" action="">
+            </fieldset>
+        </form>
+    </main>
+    <footer style="border-top: 2px solid black; margin-top: 8px;">
+        <span style="text-align: center;"><p>Parcial 1 &copy; Damian Bruque</p></span>
+    </footer>
+</body>
+</html>
